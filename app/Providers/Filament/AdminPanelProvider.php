@@ -83,7 +83,7 @@ class AdminPanelProvider extends PanelProvider
                      */
 
                     /* ═══ 0. FORM BAR — HIDDEN (lives in sticky header) ═══ */
-                    .fi-sc-actions .fi-ac { display: none !important; }
+                    .fi-main .fi-sc-actions .fi-ac { display: none !important; }
 
                     /* ═══ 1. RENDERING FOUNDATION ═══ */
                     body {
