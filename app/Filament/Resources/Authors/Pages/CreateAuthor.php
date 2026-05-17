@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Filament\Resources\Authors\Pages;
+
+use App\Filament\Resources\Authors\AuthorResource;
+use Filament\Resources\Pages\CreateRecord;
+
+class CreateAuthor extends CreateRecord
+{
+    protected static string $resource = AuthorResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            $this->getCancelFormAction()->color('gray'),
+            $this->getCreateFormAction()->formId('form'),
+        ];
+    }
+
+    protected function getFormActions(): array
+    {
+        return [];
+    }
+}
