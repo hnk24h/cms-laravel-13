@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\NowController;
 use App\Http\Controllers\Api\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,4 +14,7 @@ Route::prefix('v1')->group(function () {
 
     // Categories
     Route::get('/categories', [CategoryController::class, 'index'])->name('api.categories.index');
+
+    // Now page
+    Route::get('/now', [NowController::class, 'show'])->name('api.now.show');
 });
